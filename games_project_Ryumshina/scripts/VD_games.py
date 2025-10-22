@@ -1,4 +1,4 @@
+from games_project_Ryumshina.VD_games.cli import welcome_user
+
 def play_game():
-    """Функция, которая запускает игру."""
-    print("Добро пожаловать в игру!")
-    print("Разработчик: Ryumshina")
+    welcome_user()
