@@ -1,6 +1,6 @@
 [project]
 name = "games-project-ryumshina"
-version = "0.2.0"
+version = "0.3.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -13,7 +13,23 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["games_project_Ryumshina"]
+packages = ["VD_games"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.2",
+]
 
 [project.scripts]
-VD-games = "games_project_Ryumshina.scripts.VD_main:main"
+VD-games = "VD_games.scripts.VD_main:main"
+VD-even = "VD_games.scripts.VD_even:main"
+
+[tool.ruff]
+select = ["E", "W", "F", "I"]
+line-length = 88
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+
+
