@@ -1,7 +1,7 @@
 [project]
 name = "games-project-ryumshina"
-version = "0.3.0"
-description = "Add your description here"
+version = "0.5.1"
+description = "A collection of simple math games"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -23,13 +23,13 @@ dev = [
 [project.scripts]
 VD-games = "VD_games.scripts.VD_main:main"
 VD-even = "VD_games.scripts.VD_even:main"
+brain-calc = "VD_games.scripts.brain_calc:main"
 
 [tool.ruff]
 select = ["E", "W", "F", "I"]
 line-length = 88
 
 [tool.ruff.per-file-ignores]
-"__init__.py" = ["F401"]
 
 
 
