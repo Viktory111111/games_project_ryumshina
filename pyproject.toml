@@ -1,6 +1,6 @@
 [project]
 name = "games-project-ryumshina"
-version = "0.5.1"
+version = "0.5.2"
 description = "A collection of simple math games"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -24,6 +24,7 @@ dev = [
 VD-games = "VD_games.scripts.VD_main:main"
 VD-even = "VD_games.scripts.VD_even:main"
 brain-calc = "VD_games.scripts.brain_calc:main"
+VD-gcd = "VD_games.scripts.VD_gcd:main"
 
 [tool.ruff]
 select = ["E", "W", "F", "I"]
