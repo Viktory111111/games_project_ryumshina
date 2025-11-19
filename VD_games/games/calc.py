@@ -1,9 +1,9 @@
 import random
 
-from VD_games.VD_games.cli import run_game, welcome_user
+GAME_RULES = "What is the result of the expression?"
 
 
-def generate_calc_question():
+def generate_round():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
     operator = random.choice(['+', '-', '*'])
@@ -18,13 +18,3 @@ def generate_calc_question():
 
     question = f"{num1} {operator} {num2}"
     return question, correct_answer
-
-
-def main():
-    name = welcome_user()
-    print("What is the result of the expression?")
-    run_game(name, generate_calc_question, "Calc")
-
-
-if __name__ == '__main__':
-    main()
